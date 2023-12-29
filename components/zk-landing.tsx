@@ -5,12 +5,13 @@
 import { Button } from "@/components/ui/button"
 import { SheetTrigger, SheetContent, Sheet } from "@/components/ui/sheet"
 import Link from "next/link"
-import { CardHeader, CardContent, Card } from "@/components/ui/card"
-import { Label } from "@/components/ui/label"
-import { Input } from "@/components/ui/input"
+import { CardHeader, CardContent, Card } from "./ui/card"
+import { Label } from "./ui/label"
+import { Input } from "./ui/input"
 import { PinIcon } from "./ui/icons/PinIcon"
 import { MenuIcon } from "./ui/icons/MenuIcon"
 import { DataCard } from "./DataCard"
+import ZkViews from './zkViews/ZkViews'
 
 export function ZkLanding() {
   return (
@@ -39,6 +40,9 @@ export function ZkLanding() {
       </header>
       <main className="flex flex-col items-center justify-center h-screen bg-gray-400">
       <DataCard />
+      <div>
+      <ZkViews />
+      </div>
       </main>
     </>
   )
